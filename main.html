@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--!! google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--! font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- !css part -->
+    <link rel="stylesheet" href="./main.css">
+    <title>Page</title>
+</head>
+
+<body>
+    <main>
+        <form id="form" action="">
+            <h1>Registration Part</h1>
+            <div class="ourInput">
+                <label for="username">Name</label>
+                <input placeholder="Name..." type="text" name="username" id="userName" required>
+                <div id="error" class="error">Invalid name!!!</div>
+            </div>
+            <div class="ourInput">
+                <label for="usersurname">Surname</label>
+                <input placeholder="Surname..." type="text" name="usersurname" id="userSurname" required>
+            </div>
+            <div class="ourInput">
+                <label for="age">Age</label>
+                <input placeholder="Age..." type="text" name="age" id="userAge" required>
+                <span id="ageError">Not allowed</span>
+            </div>
+            <div class="ourInput">
+                <label for="email">Email</label>
+                <input placeholder="Email..." type="email" name="email" id="userEmail" required>
+            </div>
+            <div class="ourInput">
+                <label for="password">Password</label>
+                <input placeholder="Password..." type="password" name="password" id="password" required>
+                <span id="see">
+                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-lock-open"></i>
+                </span>
+            </div>
+            <div class="ourInput">
+                <label for="password2">Password confirmation</label>
+                <input placeholder="Password for second time..." type="password" name="password2" id="password2"
+                    required>
+            </div>
+            <button type="submit" id="submit">Sign Up</button>
+        </form>
+    </main>
+
+
+
+    <script src="./main.js" defer></script>
+</body>
+
+</html>
